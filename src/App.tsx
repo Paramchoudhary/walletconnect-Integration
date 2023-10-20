@@ -40,9 +40,8 @@ createWeb3Modal({
 export default function App() {
   // 4. Use modal hook
   const modal = useWeb3Modal()
-  const state = useWeb3ModalState()
-  const { themeMode, themeVariables, setThemeMode } = useWeb3ModalTheme()
-  const events = useWeb3ModalEvents()
+  const { themeMode,  setThemeMode } = useWeb3ModalTheme()
+
 
   return (
     <WagmiConfig config={wagmiConfig}>
